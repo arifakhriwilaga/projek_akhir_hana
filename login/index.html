@@ -1,0 +1,58 @@
+<?php
+include "koneksi.php";
+session_start();
+if (isset($_SESSION['username'])){
+header ("location:http://127.0.0.1/pa/home.php");
+}
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Login Box HTML Code - www.PSDGraphics.com</title>
+
+<link href="login-box.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body background="z.jpg">
+<form method="post" name="login" action="cek_login.php">
+<div style="padding: 100px 0 0 350px;">
+
+
+<div id="login-box">
+
+<H2>Vagrant. Inc</H2>
+Welcome to our website. This website can control our activity project and watching the good thing what have we made.<br />
+<div id="login-box-name" style="margin-top:20px;">Username :</div><div id="login-box-field" style="margin-top:20px;"> 
+<input name="username" class="form-login" title="Username"  size="30" maxlength="2048"/>
+</div>
+<div id="login-box-name">Password :</div><div id="login-box-field">
+<input type="password"  name="password" class="form-login" title="Password" size="30" maxlength="2048" />
+</div>
+<br />
+<br />
+<a href="../home.php" ><img src="images/login-btn.png" width="103" height="42" style="margin-left:90px;" /></a>
+
+
+
+
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
